@@ -10,8 +10,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
     </style>
 
-    <link rel="stylesheet" href="../main.css">
-    <title>MIGRACION MASTERII ALICANTE</title>
+    <link rel="stylesheet" href="./main.css">
+    <title>MIGRACION MASTERII VALENCIA</title>
 </head>
 
 <body>
@@ -42,32 +42,33 @@
 
 <div id="menu" class="menu-container">
     <ul class="menu-cointainer-ul">
-        <a href="./Valencia.html"><li class="menu-cointainer-ul-li">Valencia</li></a> 
-        <a href="./Castellon.html"><li class="menu-cointainer-ul-li">Castellon</li></a>
-        <a href="./Alicante.html"><li class="menu-cointainer-ul-li" style=" padding:1em;
+        <a href="./index.html"><li class="menu-cointainer-ul-li valencia " style=" padding:1em;
             font-weight: bold;
             color:#D5CABD;
             border:5px solid #D5CABD;
             background-color:#133358;
             border-radius:5px;
-           ">Alicante</li></a>
+           ">Valencia</li>
+        <a href="./Castellon.html"><li class="menu-cointainer-ul-li">Castellon</li></a>
+        <a href="./Alicante.html"><li class="menu-cointainer-ul-li">Alicante</li></a>
         <a href="./Barcelona.html"><li class="menu-cointainer-ul-li">Barcelona</li></a>
     </ul>
 </div>
 
 <div class="main-container">
-    <div class="expl-rec-val">  <img class="expl-rec-val-imagen" src="../plus-svgrepo-com.svg" alt="">
-        <p class="expl-rec-val-text"> Se han de crear los usuarios y los puestos de la farmacia.Es muy intuitivo en configuracion puestos y empleados. <br>
-            En esta comunidad cada usuario tiene un certificado el cual se ha de instalar en cada puesto. <br> Una vez instalado en Farmanager entramos en receta/receta electronica
-            le damos al muñeco de abajo y hay se ha de poner toda la información que pide con DNI incluido. Grabamos y finalizamos        </p> </div>
-  
+ 
+  <div class="expl-rec-val">  <img class="expl-rec-val-imagen" src="./plus-svgrepo-com.svg" alt="">
+  <p class="expl-rec-val-text">Se han de crear los usuarios y los puestos de la farmacia.Es muy intuitivo en configuracion puestos y empleados La instalación de receta electronica consisite en un certificado unico de la farmacia Llamado RELE el cual se instala en todos los equipos
+      con una contrseña , una vez instalado se ha de ir a Farmanager y en configuracion puestos y empleados a la derecha de cada empleado pulsamos el simbolo +
+      nos saldra un mensaje en el cual tenemos que darle a los mensajes a continuacion NO/SI/CHECK.
+  </p> </div>
     <div class="servidor-barcelona">
-        <p class="titulo"> ALICANTE</p>
-        <div class="change-alicante-puesto"><img class='icono-mouse' src="../mouse.svg" alt=""></div>
-        <div class="change-alicante-servidor"><img class='icono-server' src="../server.svg" alt=""></div>
-
+        
+        <p class="titulo"> VALENCIA</p>
+        <div class="change-valencia-puesto"><img class='icono-mouse' src="./mouse.svg" alt=""></div>
+        <div class="change-valencia-servidor"><img class='icono-server' src="./server.svg" alt=""></div>
         <div class="container-anydesk">
-            <p> IP </p>
+            <p class="ip-text"> IP </p>
             <input type="text" name="" id="Any" class=" any any-desk"></div>
         <br>
 
@@ -104,10 +105,10 @@
         <label for="usuario-impresoras">Java.</label> <a class="saber" href="#java">saber mas...</a><br>
 
         <input type="checkbox" name="" id="item12" class="check-s item12">
-        <label for="usuario-impresoras">Instalacion de Certificados.</label><a class="saber" href="#api"> saber mas...</a><br>
+        <label for="usuario-impresoras">Instalacion rele (receta electronica).</label><a class="saber" href="#api"> saber mas...</a><br>
 
         <input type="checkbox" name="" id="item13" class="check-s item13">
-        <label for="usuario-impresoras">ACCV Firma Electrónica.</label><a class="saber" href="#setup-online">saber mas...</a><br>
+        <label for="usuario-impresoras">Insatalacion de certificados.</label><a class="saber" href="#setup-online"> saber mas...</a><br>
 
         <input type="checkbox" name="" id="item14" class="check-s item14">
         <label for="usuario-impresoras">SMS.</label><a class="saber" href="#sms">saber mas...</a><br>
@@ -126,13 +127,18 @@
 
         <input type="checkbox" name="" id="item19" class="check-s item19">
         <label for="usuario-impresoras">Fuente.</label><a class="saber" href="#sifare"> saber mas...</a><br>
+        
+      
 
         <input type="checkbox" name="" id="item20" class="check-s item20">
-        <label for="funcionamiento-RE" class='pregunta '>¿Has comprobado que funciona receta electronica?.</label><br>
+        <label for="usuario-impresoras">ACCV Firma Electrónica.</label><a class="saber" href="#accv">saber mas...</a><br>
 
         <input type="checkbox" name="" id="item21" class="check-s item21">
-        <label for="funcionamiento-sevem" class='pregunta '>¿Has comprobado que funciona SEVEM?.</label><br>
+        <label for="funcionamiento-RE" class='pregunta '>¿Has comprobado que funciona receta electronica?.</label><br>
+
         <input type="checkbox" name="" id="item22" class="check-s item22">
+        <label for="funcionamiento-sevem" class='pregunta '>¿Has comprobado que funciona SEVEM?.</label><br>
+        <input type="checkbox" name="" id="item23" class="check-s item23">
         <label for="funcionamiento-impresoras" class='pregunta '>¿Has comprobado funcionamiento de impresoras?.</label><br>
 
         <br><br>
@@ -146,73 +152,73 @@
      
     <div id="usuario-impresoras" class=" close container-usuarioImpresoras"> <p class="saber-mas-p-usuarioImpresoras">usuario impresoras</p> 
     <p >Se crea este usuario con el fin de poder compartir documentos e impresoras y tener siempre las mismas credenciales en todos los equipos. <br> Una vez creado este usuario ha de desaparecer para el usuario final con la aplicacion de hidecounts ubicada en técnicos\compartida\instalador </p>
-    <a href="#menu"><img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+    <a href="#menu"><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
     <div id="accesos-farmanager" class=" close container-accesosFarmanager"> <p class="saber-mas-p-accesosFarmanager">Accesos Farmanager</p> 
     <p >Carpeta que hemos de pegar con archivos indispensables para la migracion y futura configuracion de farmanager ubicada en: técnicos/compartida </p>
-    <a href="#menu""><img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+    <a href="#menu""><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
     <div id="rutaIP" class=" close container-rutaIP"> <p class="saber-mas-p-rutaIP">cambiar ruta IP en servidor</p>
     <p >IMPORTANTE - se ha de cambiar cuando ya este migrado el programa para que todos los puestos puedan acceder a la ruta de Farmanager <br> ejectuamos la siguiente query en MySQL <br> update gesql.ges001 set serdorurl='http://XXX.XXX.X.X:8081' where id=1; <br> donde las X se cambiaran por la ip del servidor. </p>
-    <a href="#menu"><img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+    <a href="#menu"><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
     <div id="nod32" class=" close container-nod32"> <p class="saber-mas-p-nod32">nod32</p> 
     <p>En herramientas, configuracion avanzada/web hay que quitar el protocolo TSL y en herramientas/actualización quitar las actualizaciones </p>
-    <a href="#menu""><img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+    <a href="#menu""><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
     <div id="farmanager-client"class=" close container-farmanagerClient"> <p class="saber-mas-p-farmanagerClient">farmanager Client</p> 
     <p >Se quita de escritorio el icono de farmanager que crea la instalación del servidor y se instala el Faramanger Client ubicado en técnicos\compartida\instalador <br> le damos a todo siguiente y crearea dos iconos , nos quedamos con el que acaba con .exe   </p>
-    <a href="#menu""><img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+    <a href="#menu""><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
     <div id="ereceta" class=" close container-ereceta"> <p class="saber-mas-p-ereceta">Ereceta</p> 
     <p >Ejecutable que se instala en servidor ubicado en el propio servidor una vez se realice la migracion en c:/Farmanager/tomcat/act</p>
-    <a href="#menu""><img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+    <a href="#menu""><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
    <div  id="java" class=" close container-java"> <p class="saber-mas-p-java">Java</p> 
     <p >Se instalara el java jre-6u38 y el jre-8u341(version 32bits) ubicados en técnicos\compartida\instalador una vez instalado en panel de control/java/pestaña java : ver - deselecionaremos el 8u341 </p>
-    <a href="#menu"">  <img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+    <a href="#menu"">  <img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
-    <div  id="api" class=" close container-api"> <p class="saber-mas-p-api">Insatalacion de Certificados</p> 
-    <p>Se han de instalar todos los certificados de todos los usuarios que estan en la farmacia. </p>
+    <div  id="api" class=" close container-api"> <p class="saber-mas-p-api">Rele</p> 
+    <p>Se ha de instalar el certificado de la farmacia tendriamos que preguntar al titular donde esta el rele en el caso de no tenerlo llamar al colegio es instantaneo el envio. </p>
     <a href="#menu""><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
-    <div  id="setup-online" class=" close container-setupOnline"> <p class="saber-mas-p-setupOnline">ACCV firma electronica.</p> 
-    <p >Se instala el archivo ACCV.exe ubicado en tecnicos/SANTO GRIAL/DRIVERS y todo siguiente.</p>
+    <div  id="setup-online" class=" close container-setupOnline"> <p class="saber-mas-p-setupOnline">Instalacion de certificados</p> 
+    <p >Los certificados se instalan en el programa de farmanager ubicado en configuracion / puestos y empleados / por cada nombre a la derecha hay un + pues se pulsa y a los pop ups que aparecen el primero es NO y el segundo SI</p>
     <a href="#menu""><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
     <div id="sms"class=" close container-sms"> <p class="saber-mas-p-sms">sms</p> 
     <p > Se ha de ejecutar la siguiente query mySQL en la BBDD <br> update gesql.ges001 set csmsurl='sms.cofares.es' where id=1; <br> update gesql.ges001 set ismsport=9507  where id=1  
-    </p><a href="#menu""><img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+    </p><a href="#menu""><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
     <div id="unificar-cajas" class=" close container-unificarCajas"> <p class="saber-mas-p-unificarCajas">unificar cajas </p> 
     <p>Preguntar a Formador si el usuario va usar todas las cajas unificadas si es que si - dejarlas todas en caja 0 desde Farmanager en configuracion/puestos y empleados en cajon todos iran ubicadas en la caja 0<br> si es que no hablarlo con el formador de como configurar las cajas. </p>
-    <a href="#menu"><img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+    <a href="#menu"><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
     <div id="backup" class=" close container-BackupFarmanager"> <p class="saber-mas-p-BackupFarmanager">BackupFarmanager
          <p >Seguir manual en tecnicos\MANUALES\Manual Crear copia de seguridad </p>
-         <a href=""><img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+         <a href=""><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
     <div id="gpedit" class=" close container-Gpedit"> <p class="saber-mas-p-Gpedit">gpedit </p> 
     <p >Configuracion para que Ereceta se instale solo en el programa. <br> Se ha de abrir en Ejectuar el comando gpedt.msc y en Configuracion de windows - Configuracion de seguridad - Directivas locales - Opciones de seguridad  - en la opción "control de cuentas de usuario ejecutar todos los adminstradores en modo aprobacion de administrador /deshabilitar y reiniciar equipo.  "   </p>
-    <a href="#menu"><img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+    <a href="#menu"><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
     <div id="compartida" class=" close container-compartida"> <p class="saber-mas-p-compartida">compartida </p> 
     <p >Carpeta que ponemos en todos los servidores para poder commpartir archivos. Pegar la carpeta compartida  en C: y compartir con el usuario todos como lectura y escritura </p>
-    <a href="#menu""><img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+    <a href="#menu""><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
 
     <div id="sifare" class=" close container-sifare"> <p class="saber-mas-p-sifare">Fuente </p> 
         <p >Fuente que tenemos que instalar para las hojas de receta electronica ubicada en tecnicos/COMPARTIDA/INSTALADOR/FRE3OF9X_Fuente.TTF le damos boton derecho encima e instalar en todos los usuarios.</p>
-        <a href="#menu""><img class="plus" src="../up-arrow-svgrepo-com.svg" alt=""></a></div>
+        <a href="#menu""><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
         </div>
-  
+        <div  id="accv" class=" close container-accv"> <p class="saber-mas-p-accv">ACCV firma electronica.</p> 
+            <p >Se instala el archivo ACCV.exe ubicado en tecnicos/SANTO GRIAL/DRIVERS y todo siguiente.</p>
+            <a href="#menu""><img class="plus" src="./up-arrow-svgrepo-com.svg" alt=""></a></div>
     
     </div>
-    <script>
-             
-             const changeAlicantePuesto = document.querySelector('.change-alicante-puesto')
-             const changeAlicanteServidor = document.querySelector('.change-alicante-servidor')
-
-             
-       changeAlicantePuesto.addEventListener('click', ()=> {
+     <script>
+        const changeValenciaPuesto = document.querySelector('.change-valencia-puesto')
+        const changeValenciaServidor = document.querySelector('.change-valencia-servidor')
+           
+        changeValenciaPuesto.addEventListener('click', ()=> {
     
         document.querySelector('.item1').checked=true;
         document.querySelector('.item3').checked=true;
@@ -221,10 +227,11 @@
         document.querySelector('.item15').checked=true;
         document.querySelector('.item16').checked=true;
         document.querySelector('.icono-mouse').style.transform='rotate(90deg)'
-       
+     
     
      })
-     changeAlicanteServidor.addEventListener('click', ()=> {
+
+     changeValenciaServidor.addEventListener('click', ()=> {
     
     document.querySelector('.item1').checked=false;
     document.querySelector('.item3').checked=false;
@@ -242,6 +249,6 @@
 
 </div>
 </body>
-<script src="../javaScript.js "></script>
+<script src="./javaScript.js "></script>
 
 </html>

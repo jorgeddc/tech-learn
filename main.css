@@ -12,6 +12,13 @@ body {
 
 /* NUEVO PROYECTO PARA TECNICOS */
 
+.ip-text{
+    text-align: center;
+    letter-spacing: 5px;
+    color:#2d97ac;
+    font-size: 25px;
+    font-weight: bold;
+}
 .expl-rec-val {
     width:430px;
     height: 100px;
@@ -135,6 +142,7 @@ body {
 
 .container-saber-mas
 {   display:grid;
+     width:100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:1fr 1fr; 
     gap:5px;
@@ -476,7 +484,26 @@ label,
         font-size: 25px;
         margin-top: 1500px
     } */
-
+    .menu-container {
+      
+        width:100%;
+        height:5em;
+        padding:1em
+    }
+    .expl-rec-val {
+        width:330px;
+        height: 100px;
+        overflow:hidden;
+        cursor:pointer;
+        transition:0.5s height;
+    
+    }
+    .expl-rec-val.down {
+   
+        height: 420px;
+       
+    
+    }
     .icono-mouse{
         position:absolute;
         width:50px;
@@ -509,8 +536,8 @@ label,
     } 
     .container-saber-mas
     {
-     
-   
+      
+      
         grid-template-columns:1fr ;
        
       } 
@@ -635,6 +662,17 @@ label,
         height: 550px;
         margin-top: 250px;
         margin-bottom: -230px;
+    }
+
+    .sabermas-p { 
+        
+        
+        font-size: 30px;
+      
+      
+        
+     
+      
     }
 
 }
