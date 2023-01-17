@@ -71,7 +71,7 @@ saberMas.forEach((element,index) => element.addEventListener('click', ()=>{
         document.querySelector(".container-setupOnline").classList.toggle("color")
         break;
         case 9:
-        document.querySelector(".container-sns").classList.toggle("color")
+        document.querySelector(".container-sms").classList.toggle("color")
         break;
         case 10:
         document.querySelector(".container-unificar-cajas").classList.toggle("color")

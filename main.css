@@ -20,12 +20,24 @@ body {
     font-weight: bold;
 }
 .expl-rec-val {
+    
     width:430px;
     height: 100px;
-    overflow:hidden;
+     overflow:hidden;  
     cursor:pointer;
     transition:0.5s height;
 
+}
+.menu-receta{
+    display:flex;   
+    width:600px;
+ 
+    position:relative;
+}
+.RE-title{
+    position:absolute;
+    top:50px;
+    left:100px;
 }
 .expl-rec-val.down {
    
