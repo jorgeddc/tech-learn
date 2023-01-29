@@ -64,7 +64,19 @@
   
     <div class="servidor-barcelona">
         <p class="titulo">BARCELONA</p>
-        <div class="change-barcelona-puesto"><img class='icono-mouse' src="./mouse.svg" alt=""></div>
+        <div class="change-barcelona-puesto"><img class='icono-mouse' src="./mouse.svg" alt="">
+        <div class="menu-raton">
+            <div class="menu-raton-migracion-0  margin-menu-raton"> 
+                <p class="menu-raton-migracion-p"></p>Migracion</div>
+            <div class="menu-raton-puesto-0 margin-menu-raton">
+                 <p class="menu-raton-puesto-0-p"></p>clon - P</div>
+            <div class="menu-raton-servidor-0 margin-menu-raton"> 
+                <p class="menu-raton-servidor-0-p"></p>clon - S</div>
+            </div>
+       
+       
+       </div>
+       
         <div class="change-barcelona-servidor"><img class='icono-server' src="./server.svg" alt=""></div>
         <div class="container-anydesk">
             <p class="ip-text"> IP </p>
@@ -128,13 +140,22 @@
         <label for="usuario-impresoras">Acceso directo Sifare.</label><a class="saber" href="#sifare"> saber mas...</a><br>
 
         <input type="checkbox" name="" id="item20" class="check-s item20">
-        <label for="funcionamiento-RE" class='pregunta '>¿Has comprobado que funciona receta electronica?.</label><br>
-
+        <label for="funcionamiento-RE" class='pregunta '>Opciones de energía (nunca suspender, nunca apagar).</label><br>
         <input type="checkbox" name="" id="item21" class="check-s item21">
-        <label for="funcionamiento-sevem" class='pregunta '>¿Has comprobado que funciona SEVEM?.</label><br>
+        <label for="funcionamiento-RE" class='pregunta '>Icono Ils en el escritorio con nombre     "Control remoto".</label><br>
         <input type="checkbox" name="" id="item22" class="check-s item22">
-        <label for="funcionamiento-impresoras" class='pregunta '>¿Has comprobado funcionamiento de impresoras?.</label><br>
-
+        <label for="funcionamiento-RE" class='pregunta '>Revisar instalación .Net Framework 3.5. </label><br>
+        
+        
+        
+                <input type="checkbox" name="" id="item23" class="check-s item23">
+                <label for="funcionamiento-RE" class='pregunta '>¿Has comprobado que funciona receta electronica?.</label><br>
+        
+                <input type="checkbox" name="" id="item24" class="check-s item24">
+                <label for="funcionamiento-sevem" class='pregunta '>¿Has comprobado que funciona SEVEM?.</label><br>
+                <input type="checkbox" name="" id="item25" class="check-s item25">
+                <label for="funcionamiento-impresoras" class='pregunta '>¿Has comprobado funcionamiento de impresoras?.</label><br>
+        
         <br><br>
       </div>
   
@@ -207,34 +228,52 @@
     
     </div>
      <script>
-            const changeBarcelonaPuesto = document.querySelector('.change-barcelona-puesto')
-             const changeBarcelonaServidor = document.querySelector('.change-barcelona-servidor')
-
-             
-       changeBarcelonaPuesto.addEventListener('click', ()=> {
+         const changePuesto = document.querySelector('.menu-raton-puesto-0')
+        const raton = document.querySelector('.change-barcelona-puesto')
+        const changeMigracion = document.querySelector('.menu-raton-migracion-0') 
+        const changeServidor = document.querySelector('.menu-raton-servidor-0') 
+        const refrescar =document.querySelector('.icono-server')
+           
+     refrescar.addEventListener('click',()=>{
+       } )
+        raton.addEventListener('click', ()=> {
     
-        document.querySelector('.item1').checked=true;
+      
+        document.querySelector('.icono-mouse').classList.toggle('rotate-mouse')                                                                                                            ;
+        document.querySelector('.menu-raton').classList.toggle('menu-r-show')                                                                                                            ;
+     
+    
+     })
+     changePuesto.addEventListener('click', ()=> {
+     document.querySelector('.item1').checked=true;
         document.querySelector('.item3').checked=true;
         document.querySelector('.item4').checked=true;
         document.querySelector('.item14').checked=true;
         document.querySelector('.item15').checked=true;
         document.querySelector('.item16').checked=true;
-        document.querySelector('.icono-mouse').style.transform='rotate(90deg)'
-       
+        document.querySelector('.item18').checked=true;
+        document.querySelector('.item20').checked=true;
+    })
     
-     })
-     changeBarcelonaServidor.addEventListener('click', ()=> {
+    changeMigracion.addEventListener('click', ()=> {
     
-    document.querySelector('.item1').checked=false;
-    document.querySelector('.item3').checked=false;
-    document.querySelector('.item4').checked=false;
-    document.querySelector('.item14').checked=false;
-    document.querySelector('.item15').checked=false;
-    document.querySelector('.item16').checked=false;
-    document.querySelector('.icono-mouse').style.transform='rotate(10deg)'
+
+        location.reload()
+
+   
  
 
  })
+ changeServidor.addEventListener('click', ()=> {
+ document.querySelector('.item19').checked=true; 
+
+ document.querySelector('.item15').checked=true;
+ document.querySelector('.item14').checked=true;
+ document.querySelector('.item4').checked=true;
+
+
+
+})
         // var btn=document.querySelector(".print")
         // btn.onclick = () => { window.print();}
     </script>   

@@ -67,15 +67,60 @@ body {
 
     
 }
+
+.change-valencia-puesto ,
+ .change-castellon-puesto,
+ .change-barcelona-puesto,
+.change-alicante-puesto{
+    
+    position:relative;
+
+}
+.menu-raton{
+    
+    width:100px;
+    height:0;
+  
+    overflow:hidden;
+    border-radius:10px;
+    box-shadow:8px 5px 10px #133358;
+ 
+    background-color:#2d97ac;
+    position:absolute;
+    top:30px;
+    left:345px;
+    transition:0.4s height;
+}
+
+.menu-raton.menu-r-show{
+height:100px;
+border:2px solid #133358;
+}
+.margin-menu-raton{
+  text-align:center;
+
+  cursor:pointer;
+  margin:10px;
+}
+.margin-menu-raton:hover{
+   font-weight:bold;
+    color: #133358;
+}
+
+
+
 .icono-mouse{
     position:absolute;
     width:70px;
     height:100px;
     transform:rotate(10deg);
-    top:-0px;
-    left:360px;
+    top:-52px;
+    left:345px;
     transition:0.4s linear;
     cursor:pointer;
+}
+.icono-mouse.rotate-mouse{
+    transform:rotate(90deg);
 }
 
 .icono-server{
@@ -397,7 +442,7 @@ body {
 
     padding: 1em;
     width:430px;
-    height:620px;
+    height:680px;
     box-shadow:12px 5px 10px #2d97ac;
     background-color: #133358;
     position:relative;
@@ -485,8 +530,11 @@ label,
    
         grid-template-columns:1fr ;
        
-      } 
-    }
+      }
+
+
+      
+
 @media screen and (max-width:500px) {
     
     
@@ -521,11 +569,24 @@ label,
         width:50px;
         height:80px;
         transform:rotate(10deg);
-        top:-0px;
+        top:-43px;
         left:270px;
         transition:0.4s linear;
         cursor:pointer;
     }
+   
+
+ 
+    .menu-raton{
+    
+     
+        position:absolute;
+        top:18px;
+        left:250px;
+        transition:0.4s height;
+    }
+    
+
     
     .icono-server{
         position:absolute;
@@ -638,15 +699,15 @@ label,
         padding: 0.5em;
         
     }
+    .check-s{
+        margin:8px
+    }
+    
 
     .container-anydesk {
         margin-top: 20px;
     }
-    /* .container-anydesk p{
-     font-size:10px;   
-
-    } */
-
+ 
     label {
         color: #D5CABD;
     }
